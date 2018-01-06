@@ -3,7 +3,7 @@ layout: post
 title:  "树莓派GPIO开发"
 date:   2018-01-06
 categories: Raspi
-tags: 
+tags: raspberrypi
 ---
 # 树莓派GPIO开发
 
@@ -16,7 +16,7 @@ tags:
 1. 安装C库
     下载[BCM2835库](http://www.airspayce.com/mikem/bcm2835/bcm2835-1.50.tar.gz)得到文件`bcm2835-1.50.tar.gz`  
     然后安装库
-    ```
+    ```bash
     tar zxvf bcm2835-1.50.tar.gz
     cd bcm2835-1.50/
     ./configure 
@@ -38,7 +38,7 @@ tags:
 3. 测试LED  
     下面写一个简单的程序，点亮LED灯程序来测试以及说明用法  
 
-    ```
+    ```c
         #include <bcm2835.h>
 
         int main(int argc, char **argv)
@@ -74,7 +74,7 @@ tags:
 4. 按键输入
     当用按键功能的时候，gpio设置输入模式，并根据实际需要设置上下拉电阻，然后读取引脚状态即可获取按键值  
     
-    ```
+    ```c
     bcm2835_gpio_fsel(RPI_GPIO_P1_05, BCM2835_GPIO_FSEL_INPT);
     bcm2835_gpio_set_pud(RPI_GPIO_P1_05, BCM2835_GPIO_PUD_UP);
     uint8_t key = bcm2835_gpio_lev(RPI_GPIO_P1_05);
@@ -82,7 +82,7 @@ tags:
     
     稍微修改一下上面才程序，测试按键，如下  
     
-    ```
+    ```c
     #include <bcm2835.h>
 
     int main(int argc, char **argv)

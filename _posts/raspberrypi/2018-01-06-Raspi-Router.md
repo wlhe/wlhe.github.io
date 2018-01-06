@@ -3,7 +3,7 @@ layout: post
 title:  "树莓派配置路由器"
 date:   2018-01-06
 categories: Raspi
-tags: 
+tags: raspberrypi
 ---
 
 ### 1. 安装工具  

@@ -3,7 +3,7 @@ layout: post
 title:  "树莓派SD卡系统制作"
 date:   2018-01-06
 categories: Raspi
-tags: 
+tags: raspberrypi
 ---
 # 树莓派SD卡系统制作
 
