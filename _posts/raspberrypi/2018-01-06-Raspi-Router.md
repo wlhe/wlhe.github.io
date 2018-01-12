@@ -144,4 +144,4 @@ hostapd相关配置完成
 通过建立双网卡桥接br0链接wlan0和eth0实现上网
     
 [Ref: https://wiki.debian.org/BridgeNetworkConnections](https://wiki.debian.org/BridgeNetworkConnections)  
-参见另一篇[桥接笔记](http://blog.csdn.net/wind4study/article/details/76695147)
+参见另一篇[桥接笔记]({{site.url}}/2018/01/linux-dual-network-card)
